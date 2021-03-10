@@ -3,23 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <title>Google</title>
-        <link href="style.css" ref="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <nav>
-            <a>Gmail</a>
-            <a>Images</a>
-            <a><img src="img/menu.png" alt="Menu image"></a>
-            <button>Sign In</button>
+        <nav id="top">
+            <div id="top-links">
+                <a href="#" class="text-link">Gmail</a>
+                <a href="#" class="text-link">Images</a>
+                <a href="#" id="menu-link"><img src="img/menu.png" alt="Menu image"></a>
+                <a href="#" id="sign-in-link">Sign In</a>
+            </div>
         </nav>
-        <section>
-            <img src="img/logo.png" alt="Google logo">
+        </div>
+        <section id="logo-container">
+            <img id="logo" src="img/logo.png" alt="Google logo">
         </section>
         <section>
             <form>
-                <img src="img/search.svg">
+                <img src="img/search.svg" alt="" width="20px" height="20px">
                 <input type="text">
-                <img src="img/voice_search.png">
+                <img src="img/voice_search.png" alt="" width="20px" height="20px">
                 <input type="submit" value="Google Search">
                 <input type="submit" value="I'm Feeling Lucky">
             </form>
@@ -27,15 +30,15 @@
         </section>
         <footer>
             <div>
-                <a>About</a>
-                <a>Advertising</a>
-                <a>Business</a>
-                <a>How Search works</a>
+                <a href="#" class="text-link">About</a>
+                <a href="#" class="text-link">Advertising</a>
+                <a href="#" class="text-link">Business</a>
+                <a href="#" class="text-link">How Search works</a>
             </div>
             <div>
-                <a>Privacy</a>
-                <a>Terms</a>
-                <a>Settings</a>
+                <a href="#" class="text-link">Privacy</a>
+                <a href="#" class="text-link">Terms</a>
+                <a href="#" class="text-link">Settings</a>
             </div>
         </footer>
     </body>
