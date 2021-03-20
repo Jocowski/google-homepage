@@ -3,22 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <title>Google</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <nav id="top">
-            <div id="top-links">
-                <a href="#" class="text-link">Gmail</a>
-                <a href="#" class="text-link">Images</a>
-                <a href="#" id="menu-link"><img src="img/menu.png" alt="Menu image"></a>
-                <a href="#" id="sign-in-link">Sign In</a>
-            </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#" class="button">Sign In</a></li>
+            </ul>
         </nav>
-        </div>
-        <section id="logo-container">
-            <img id="logo" src="img/logo.png" alt="Google logo">
-        </section>
-        <section id="searching">
+
+        <section>
+            <img src="img/logo.png" alt="Google logo">
+
             <form>
                 <input id="searchbox" type="text">
                 <div id="buttons">
@@ -26,19 +25,26 @@
                     <input class="button" type="submit" value="I'm Feeling Lucky">
                 </div>
             </form>
-            <p>Google offered in: <a href="#" class="blue-text-link">Português (Brasil)<a></p>
+
+            <p>Google official homepage: <a href="https://www.google.com/" target="_blank">Google</a></p>
         </section>
+
         <footer>
-            <div id="left">
-                <a href="#" class="text-link">About</a>
-                <a href="#" class="text-link">Advertising</a>
-                <a href="#" class="text-link">Business</a>
-                <a href="#" class="text-link">How Search works</a>
+            <div class="footerleft">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">How Search works</a></li>
+                </ul>
             </div>
-            <div id="right">
-                <a href="#" class="text-link">Privacy</a>
-                <a href="#" class="text-link">Terms</a>
-                <a href="#" class="text-link">Settings</a>
+
+            <div class="footerright">
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
             </div>
         </footer>
     </body>
