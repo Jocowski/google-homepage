@@ -11,6 +11,7 @@ body {
     margin: 0;
 }
 
+/* NAV */
 nav {
     padding: 1rem;
 }
@@ -37,7 +38,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-nav a.button {
+.sign-in-button {
     display: block;
     font-size: 0.9rem;
     color: white;
@@ -47,19 +48,75 @@ nav a.button {
     padding: 0.5rem 1rem;
 }
 
-nav a.button:hover {
+.sign-in-button:hover {
     display: block;
     color: white;
     background-color: #2b7de9;
     text-decoration: none;
 }
 
+/* SECTION */
 section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     margin-top: 12.15rem;
-    text-align: center;
+    margin-bottom: 24.8rem;
 }
 
+/* Search Bar */
 
+section form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.searchbar {
+    padding: 0.7rem 2rem;
+    border: 1px solid #dfe1e5;
+    border-radius: 1.5rem;
+}
+
+.searchbar:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.searchbar input {
+    font-size: 1rem;
+    width: 32rem;
+    border: 0;
+}
+
+.searchbar input:focus {
+    outline: 0;
+}
+
+.search-buttons {
+    margin: 1.2rem;
+}
+
+.search-buttons button {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+    color: #3c4043;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 0.4rem;
+    margin: 0 0.5rem;
+}
+
+.search-buttons button:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+/*******************/
 
 section p {
     font-size: 0.8rem;
@@ -73,26 +130,10 @@ section a:hover {
     text-decoration: underline;
 }
 
-#searching {
-    text-align: center;
-    padding-bottom: 400px;
-}
-
-#searchbox {
-    width: 500px;
-    height: 30px;
-    border-radius: 20px;
-}
-
-#buttons {
-    padding-top: 8px;
-}
-
-
-
+/* FOOTER */
 footer {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     background-color: #f2f2f2;
     padding: 0.8rem;
@@ -100,12 +141,10 @@ footer {
 }
 
 .footerright {
-    flex-basis: 50%;
     text-align: right;
 }
 
 .footerleft {
-    flex-basis: 50%;
     text-align: left;
 }
 
